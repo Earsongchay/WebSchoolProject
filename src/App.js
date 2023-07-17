@@ -1,5 +1,5 @@
 import './App.css';
-import styles from './Styles.module.css'
+import styles from './Styles.module.css';
 import React, { useState } from 'react';
 import logo from '../src/assets/images/logo.png'
 import HomeScreen from './screens/home';
@@ -10,6 +10,8 @@ import ApplyNowScreen from './screens/apply_now';
 import PartnershipScreen from './screens/partnership';
 import AcademicScreen from './screens/academic';
 import {BrowserRouter,Routes, Route,Link} from 'react-router-dom';
+import Registeration from './screens/registeration';
+import MajorDetail from './screens/MajorDetail';
 
 
 function App() {
@@ -17,7 +19,6 @@ function App() {
   
   const handleMouseOver = () => {
     setIsOpen(true);
-
   };
 
   const handleMouseLeave = () => {
@@ -53,6 +54,8 @@ function App() {
       </div> 
       <Routes>
         <Route>
+          <Route path='/major' element={<MajorDetail/>}></Route>
+          <Route path="/registerform" element={<Registeration/>}/>
           <Route path="/" element={<HomeScreen/>}/>
           <Route path='/academic' element={<AcademicScreen/>}></Route>
           <Route path="/aboutus" element={<AboutScreen/>}/>

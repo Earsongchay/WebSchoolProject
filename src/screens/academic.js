@@ -1,11 +1,10 @@
 import React from 'react'
-import Youtube from '../container/youtube';
+import NewCover from '../components/NewCover';
 
 function AcademicScreen() {
   return (
     <div>
-      <h1>Academic Screen</h1>
-      <Youtube></Youtube>
+      <NewCover title="Tuiton Fee" text="The setec Institute’s tuition varies depending on each major."></NewCover>
     </div>
   )
 }

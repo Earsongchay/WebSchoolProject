@@ -3,7 +3,7 @@ import ButtonPrimary from '../components/ButtonPrimary';
 import coverImage from '../assets/images/cover1.png';
 import styles from '../Styles.module.css';
 
-function Major({ title, desc,Image =coverImage }) {
+function Major({ title, desc,Image =coverImage,to }) {
     return (
         <div className={`${styles.major} ${styles.flexColumn}`}>
             <div className={styles.majorImg} style={{width: '100%' ,backgroundImage: `url(${Image})`}}>  
@@ -13,7 +13,7 @@ function Major({ title, desc,Image =coverImage }) {
                 <p className={styles.p}>{desc}</p>
             </div>
             <div className={styles.majorBtns}>
-                <ButtonPrimary classname={styles.btnRound} text='Enroll Now' />
+                <ButtonPrimary classname={styles.btnRound} to={to} text='Enroll Now' />
                 {/* <a href='/' className={styles.more}>More info</a> */}
             </div>
         </div>

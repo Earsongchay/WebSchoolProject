@@ -6,7 +6,7 @@ function TextCover() {
     <div>
         <div className={styles.textCover}>
             <h1>Begin Your Education With Us, <br/>End With Job Opportunity</h1>
-            <ul>
+            <ul style={{ color:"white" }}>
                 <li>Undergraduate study</li>
                 <li>Graduate study</li>
                 <li>Diploma study</li>

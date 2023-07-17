@@ -6,10 +6,13 @@
     --color-green-0:#5dbc0a;
     --color-green-2:#2ad56b;
     --color-green-3:#0cf37f;
+    --color-grey-0:#54684A;
+    --color-grey-1:#F9F9F9;
+    --color-dark-0:#168A56;
+    --color-dark-1:#4D4D4D;
     padding: 0px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif ;
-    width: 1517px;
 }
 
 body{
