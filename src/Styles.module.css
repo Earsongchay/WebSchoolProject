@@ -647,6 +647,9 @@
 .typeStudent:last-child {
   border-top-right-radius: 15px;
 }
+.typeStudent:hover{
+  cursor: pointer;
+}
 
 .active {
   background-color: var(--color-yellow-2);
@@ -781,7 +784,7 @@ h3 {
   height: 500px;
   width: auto;
   background: linear-gradient(90deg, rgba(3, 170, 95, 0.7) 100%, rgba(0, 78, 43, 0) 50%, rgba(22, 160, 98, 0) 100%),
-    url(../src/assets/images/fd.jpg);
+    url(../src/assets/images/fd/fd.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -797,7 +800,6 @@ h3 {
   flex-direction: column;
   margin-left: 100px;
   letter-spacing: 0px;
-
 }
 
 .majorTitle h2 {
@@ -903,8 +905,8 @@ h2 {
 
 .alumniImg {
   position: absolute;
-  height: 400px;
-  width: 30%;
+  height: 450px;
+  width: 40%;
   top: 30px;
   background-size: contain;
   background-position: center;
@@ -913,13 +915,13 @@ h2 {
 }
 
 .headCoverImg {
-  height: 500px;
+  height: 450px;
   width: auto;
   background: linear-gradient(90deg, rgba(3, 170, 95, 0.304) 100%, rgba(0, 78, 43, 0) 50%, rgba(22, 160, 98, 0) 100%),
     url(../src/assets/images/306709244_3348961808657151_6741766155211107666_n.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .mainAboutus {
@@ -967,4 +969,66 @@ ul {
   position: absolute;
   bottom: 20px;
   left: 100px;
+}
+
+.imageSchedule{
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+}
+.imageSchedule img{
+  width: 100%;
+  height: auto;
+}
+
+
+.internCard{
+  position: relative;
+  width: 440px;
+  height: 300px;
+  margin: 30px;
+}
+
+.internImage{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0px 3px 6px;
+  position: absolute;
+  height: 200px;
+  width: 390px;
+  border-radius: 15px;
+  top: 0;
+  z-index: 100;
+  left: 0px;
+}
+.internImage div{
+  border-radius: 15px;
+}
+
+.internDetails{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 290px;
+  height: 150px;
+  color: white;
+  background-color: var(--color-green-1);
+  padding:  10px 30px;
+  border-radius: 40px;
+}
+.internDetails ul{
+  color: white;
+  list-style: none;
+  margin-top: 60px;
+}
+.intershipContainer{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.internContainer{
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  justify-content: center;
 }

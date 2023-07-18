@@ -7,7 +7,7 @@ import TuitionScreen from './screens/tuition';
 import AboutScreen from './screens/about';
 import AdmissionScreen from './screens/admission';
 import ApplyNowScreen from './screens/apply_now';
-import PartnershipScreen from './screens/partnership';
+import PartnershipScreen from './screens/Internship';
 import AcademicScreen from './screens/academic';
 import {BrowserRouter,Routes, Route,Link} from 'react-router-dom';
 import Registeration from './screens/registeration';
@@ -54,7 +54,7 @@ function App() {
       </div> 
       <Routes>
         <Route>
-          <Route path='/major' element={<MajorDetail/>}></Route>
+          <Route path={`/major/:arg`} element={<MajorDetail/>}></Route>
           <Route path="/registerform" element={<Registeration/>}/>
           <Route path="/" element={<HomeScreen/>}/>
           <Route path='/academic' element={<AcademicScreen/>}></Route>

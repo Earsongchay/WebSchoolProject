@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../Styles.module.css'
-import fd1 from '../assets/images/fd1.png'
+import fd1 from '../assets/images/fd/fd1.png'
 function CardCareer({img = fd1,text}) {
     return (
         <div className={styles.card}>
