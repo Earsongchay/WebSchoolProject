@@ -4,8 +4,9 @@ import CardCareer from '../components/CardCareer'
 import Ruler from '../components/Ruler'
 import schedule from '../../src/assets/images/sche.jpg'
 import buttom from '../assets/images/Group 26.jpg'
-import major from '../assets/data/MajorData'
+import major from '../assets/data/MajorBachelorData'
 import { useParams } from 'react-router-dom'
+import ButtonPrimary from '../components/ButtonPrimary'
 
 function MajorDetail() {
   const [currentMajor, setCurrentMajor] = useState(0)
@@ -23,7 +24,8 @@ function MajorDetail() {
 
   return (
     <div onLoad={overIndexHandler} className={styles.majorDetail}>
-      <div className={styles.majorCover}>
+      <div className={styles.majorCover} style={{ backgroundSize:"cover", backgroundRepeat:"no-repeat",backgroundPosition:"center", background:`linear-gradient(90deg, rgba(3, 170, 95, 0.7) 100%, rgba(0, 78, 43, 0) 50%, rgba(22, 160, 98, 0) 100%),
+    url(${major[currentMajor].major_cover})`}}>
         <div className={styles.majorTitle}>
           <h2>{major[currentMajor].degree}</h2>
           <h1>{major[currentMajor].title}</h1>
@@ -99,10 +101,10 @@ function MajorDetail() {
           <li>If the documents are not in English, applicants must provide copies of both the original and official English-translated versions.</li>
           <li>All certificates must be attested by the Ministry of Higher Education/Cambodian Embassy.</li>
           <li>Copy must be clear and in full color. The transcript's content and serial number must be easy to read.</li>
-        </ul>
+        </ul>*/}
         <div style={{ display: "flex", paddingTop: "30px" }}>
           <ButtonPrimary text="Enroll Now" color='#EBBB08' to='/registerform' ></ButtonPrimary>
-        </div> */}
+        </div> 
         <Ruler title='Alumni' color='gold' width="85%"></Ruler>
         <div className={styles.alumniContainer}>
           <div className={styles.alumniImg} style={{ backgroundImage: `url(${major[currentMajor].alumni_img})` }} ></div>

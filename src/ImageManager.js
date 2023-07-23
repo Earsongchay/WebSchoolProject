@@ -18,12 +18,14 @@ import careerGD8 from '../src/assets/images/gd/gd8.png'
 import careerGDPAth from '../src/assets/images/gd/gdPath.png'
 import gdAlumni from '../src/assets/images/gd/alumni.png'
 import fdAlumni from '../src/assets/images/fd/alumni.png'
+import gdCover from '../src/assets/images/gd/gdCover.png'
+import fdCover from '../src/assets/images/fd/fd.jpg'
 
 
 
 const photos ={ 
-    fd :[careerFD1,careerFD2,careerFD3,careerFD4,careerFD5,careerFD6,careerFD7,careerFD8,careerFDPAth,fdAlumni],
-    gd :[careerGD1,careerGD2,careerGD3,careerGD4,careerGD5,careerGD6,careerGD7,careerGD8,careerGDPAth,gdAlumni]
+    fd :[careerFD1,careerFD2,careerFD3,careerFD4,careerFD5,careerFD6,careerFD7,careerFD8,careerFDPAth,fdAlumni,fdCover],
+    gd :[careerGD1,careerGD2,careerGD3,careerGD4,careerGD5,careerGD6,careerGD7,careerGD8,careerGDPAth,gdAlumni,gdCover]
 };
 
 export default photos

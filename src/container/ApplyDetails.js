@@ -11,9 +11,9 @@ function ApplyDetails() {
             <p style={{color:'#f8bd01'}}>Applications for Academic Year 2020-2021 are now open</p>
             <p>Register with us today to get an international quality education with affordable fees at your doorstep. We are accepting national and international applicants with a full range of backgrounds.</p>
             <div className= {`${styles.buttonBox} ${styles.flexColumn}`}>
-                  <ButtonPrimary to='/' text='Undergraduate' classname={`${styles.btnPrimary} ${styles.bounceTop}`}></ButtonPrimary>
-                  <ButtonPrimary to='/' text='Postgraduate'></ButtonPrimary>
-                  <ButtonPrimary to='/' text='International'></ButtonPrimary>   
+                  <ButtonPrimary to='/registerform' text='Undergraduate' classname={`${styles.btnPrimary} ${styles.bounceTop}`}></ButtonPrimary>
+                  <ButtonPrimary to='/registerform' text='Postgraduate'></ButtonPrimary>
+                  <ButtonPrimary to='/registerform' text='International'></ButtonPrimary>   
             </div>
         </div>
     </div>

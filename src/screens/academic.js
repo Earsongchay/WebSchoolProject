@@ -1,10 +1,10 @@
 import React from 'react'
-import NewCover from '../components/NewCover';
+import Registeration from './Registeration';
 
 function AcademicScreen() {
   return (
     <div>
-      <NewCover title="Tuiton Fee" text="The setec Institute’s tuition varies depending on each major."></NewCover>
+      <Registeration></Registeration>
     </div>
   )
 }

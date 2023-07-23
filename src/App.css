@@ -13,8 +13,12 @@
     padding: 0px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif ;
+    width: 1500px;
+    
 }
-
+h1{
+        font-weight: bold;
+      }
 body{
     box-sizing: border-box;
     margin: 0;

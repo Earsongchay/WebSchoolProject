@@ -7,7 +7,7 @@ const SchoolDetails = ({title,desc}) => {
         <div className={`${styles.detailsContainer} ${styles.flexColumn}`}>
             <h2>{title}</h2>
             <div className={styles.desc}>{desc}</div>
-            <ButtonPrimary classname={styles.btnDegree} text='More About School' color='#16a062'></ButtonPrimary>
+            <ButtonPrimary to='/aboutus' classname={styles.btnDegree} text='More About School' color='#16a062'></ButtonPrimary>
         </div>
     )
         

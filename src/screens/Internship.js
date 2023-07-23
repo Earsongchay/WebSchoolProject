@@ -4,7 +4,6 @@ import InternCard from '../components/InternCard';
 import NewCover from '../components/NewCover';
 import Ruler from '../components/Ruler';
 import InternContainer from '../container/InternContainer';
-import mis3 from '../assets/images/intern/mis3.png'
 import interns from '../assets/data/Intern'
 
 function PartnershipScreen() {

@@ -69,6 +69,7 @@
   text-align: center;
 }
 
+
 .bounceTop {
   -webkit-animation: bounce-top 0.9s both;
   animation: bounce-top 0.9s both;
@@ -98,9 +99,21 @@
 }
 
 .btnDegree {
-  padding: 10px 15px;
-  text-align: center;
   text-decoration: none;
+  background-color: var(--color-green-1);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  margin: 10px;
+}
+
+.degreeActive {
+  color: var(--color-dark-0);
+  background-color: transparent;
+  border: 1px solid var(--color-green-1);
+  padding: 10px 15px;
+  margin: 10px;
+  text-align: center;
 }
 
 /* MAJOR */
@@ -349,6 +362,7 @@
 }
 
 .ruler h1 {
+  font-weight: bold;
   margin-left: 10px;
   width: max-content;
 
@@ -426,6 +440,7 @@
 
 .detailsContainer h2 {
   padding-bottom: 20px;
+  font-weight: 600;
 }
 
 /* YOUTUBE */
@@ -515,7 +530,6 @@
   background-image: url(./assets/images/TVuth.jpg);
   width: 200px;
   height: 200px;
-  border: 1.5px solid rgb(151, 255, 54);
   box-shadow: 0px 10px 2px 2px rgba(0, 0, 0, 0.2);
   background-position: center center;
   background-size: cover;
@@ -647,7 +661,8 @@
 .typeStudent:last-child {
   border-top-right-radius: 15px;
 }
-.typeStudent:hover{
+
+.typeStudent:hover {
   cursor: pointer;
 }
 
@@ -783,10 +798,6 @@ h3 {
 .majorCover {
   height: 500px;
   width: auto;
-  background: linear-gradient(90deg, rgba(3, 170, 95, 0.7) 100%, rgba(0, 78, 43, 0) 50%, rgba(22, 160, 98, 0) 100%),
-    url(../src/assets/images/fd/fd.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: top;
   padding: 30px;
   display: flex;
@@ -950,7 +961,8 @@ ul {
 
 .newCover {
   height: 300px;
-  width: 100%;color: white;
+  width: 100%;
+  color: white;
   position: relative;
 }
 
@@ -965,31 +977,33 @@ ul {
   -webkit-text-decoration-color: gold;
   text-decoration-color: gold;
 }
-.newTextCover{
+
+.newTextCover {
   position: absolute;
   bottom: 20px;
   left: 100px;
 }
 
-.imageSchedule{
+.imageSchedule {
   margin-top: 30px;
   width: 100%;
   position: relative;
 }
-.imageSchedule img{
+
+.imageSchedule img {
   width: 100%;
   height: auto;
 }
 
 
-.internCard{
+.internCard {
   position: relative;
   width: 440px;
   height: 300px;
   margin: 30px;
 }
 
-.internImage{
+.internImage {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0px 3px 6px;
   position: absolute;
   height: 200px;
@@ -999,11 +1013,12 @@ ul {
   z-index: 100;
   left: 0px;
 }
-.internImage div{
+
+.internImage div {
   border-radius: 15px;
 }
 
-.internDetails{
+.internDetails {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1011,24 +1026,43 @@ ul {
   height: 150px;
   color: white;
   background-color: var(--color-green-1);
-  padding:  10px 30px;
+  padding: 10px 30px;
   border-radius: 40px;
 }
-.internDetails ul{
+
+.internDetails ul {
   color: white;
   list-style: none;
   margin-top: 60px;
 }
-.intershipContainer{
+
+.intershipContainer {
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
 }
 
-.internContainer{
+.internContainer {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0 50px;
   justify-content: center;
+}
+
+.submitButton {
+  background-color: var(--color-yellow-2);
+  color: white;
+  width: 100%;
+  height: max-content;
+  padding: 10px 0;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.validationMessage {
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
 }

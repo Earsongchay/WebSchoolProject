@@ -2,6 +2,7 @@ import React from 'react'
 import MajorContainer from '../container/MajorContainer'
 import styles from '../Styles.module.css'
 import buttom from '../assets/images/Group 26.jpg'
+import Ruler from '../components/Ruler'
 
 function AboutScreen() {
   return (
@@ -25,7 +26,11 @@ function AboutScreen() {
         </ul>
       </div>
       <MajorContainer></MajorContainer>
-      <div style={{width:'100%',marginTop:'100px', marginBottom:'0px'}}><img width='100%' src={buttom} alt='asd'></img></div>
+      <div style={{width:'100%',marginTop:'70px', marginBottom:'0px'}}></div>
+      <Ruler title='Our Institude Location' width="70%"></Ruler>
+      <div style={{ margin: "0 auto", width: "50%", height: "450px", padding:"30px"}}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.773534226551!2d104.89215657476416!3d11.568086088632946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095173761d4a53%3A0xcd09ff2f4d326e3f!2sSETEC%20Institute!5e0!3m2!1sen!2skh!4v1690108786088!5m2!1sen!2skh" style={{ border: "0", width: "100%", height: "100%" }} title='lmao'></iframe>
+      </div>
     </div>
   )
 }

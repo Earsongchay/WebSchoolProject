@@ -4,7 +4,7 @@ const major = [
     {
       "degree": "Bachelor of Design",
       "title": "in Fashion Design",
-      "major_cover": "",
+      "major_cover": photos.fd[10],
       "major_profile_page": photos.fd[8],
       "major_question": "What area of study does the Fashion Design program cover?",
       "major_anwser_1": `The Bachelor of Design in Graphic Design (Visual Communication) is a four-year honors degree that aims to gradually improve the creative capacity of the students in conceptualizing and utilizing cutting-edge technical skills. A fashion design course teaches students the fine art of creating attractive garments and accessories for the latest trends. In order to teach students how great fashion designs are created, these courses examine the works of well-known designers and the culture of the time.`,
@@ -16,7 +16,7 @@ const major = [
       careers: [
         {
           career_name: "Graphic Design",
-          career_img: photos.fd[0]
+          career_img: photos.fd[10]
         },
         {
           career_name: "Commercial Production",
@@ -57,7 +57,7 @@ const major = [
     {
       "degree": "Bachelor of Design",
       "title": "in Graphic Design (Visual Communication)",
-      "major_cover": "",
+      "major_cover": photos.gd[10],
       "major_profile_page": photos.gd[8],
       "major_question": "What area of study does the Graphic Design program cover?",
       "major_anwser_1": `The Bachelor of Design in Graphic Design (Visual Communication) is a three-year honors degree that aims to gradually improve the creative capacity of the students in conceptualizing and utilizing cutting-edge technical skills. The first three semesters of study will give students experience to the corporate communications, multimedia, and illustration industries while also providing them with the core knowledge and abilities of a graphic designer. Students will have eleven weeks of real-world business experience by the end of their fourth semester.`,

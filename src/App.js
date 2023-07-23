@@ -8,9 +8,8 @@ import AboutScreen from './screens/about';
 import AdmissionScreen from './screens/admission';
 import ApplyNowScreen from './screens/apply_now';
 import PartnershipScreen from './screens/Internship';
-import AcademicScreen from './screens/academic';
 import {BrowserRouter,Routes, Route,Link} from 'react-router-dom';
-import Registeration from './screens/registeration';
+import Registeration from './screens/Registeration';
 import MajorDetail from './screens/MajorDetail';
 
 
@@ -34,12 +33,13 @@ function App() {
           <Link className="menu-item-sec" to='/'>E-learning</Link>
         </div>
         <div className="menu-container-primary">
-          <Link className='menu-item' to='/'><img src={logo} alt='logo' style={{width:'100%',height:'100%'}}></img></Link>
+        <Link className='menu-item' to='/'><img src={logo} alt='logo' style={{width:'100%',height:'100%'}}></img></Link>
+          <Link className='menu-item' to='/'>Home</Link>
           <Link className="menu-item" to='/aboutus'>About Us</Link>
-          <Link className="menu-item" to='/academic'>Academic</Link>
           <Link className="menu-item" to='/admissions'>Admissions</Link>
-          <Link className="menu-item" to='/partner'>Partnership</Link>
+          <Link className="menu-item" to='/partner'>Internship</Link>
           <Link className="menu-item" to='/tuition'>Tuition</Link>
+          <Link className="menu-item" to='/registerform'>Registration</Link>
           <Link className="menu-item" to='/applynow'
            onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>Apply Now</Link>
           
@@ -57,7 +57,6 @@ function App() {
           <Route path={`/major/:arg`} element={<MajorDetail/>}></Route>
           <Route path="/registerform" element={<Registeration/>}/>
           <Route path="/" element={<HomeScreen/>}/>
-          <Route path='/academic' element={<AcademicScreen/>}></Route>
           <Route path="/aboutus" element={<AboutScreen/>}/>
           <Route path="/admissions" element={<AdmissionScreen/>}/>
           <Route path="/applynow" element={<ApplyNowScreen/>}/>
