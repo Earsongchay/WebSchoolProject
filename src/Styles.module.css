@@ -44,11 +44,6 @@
 
 
 
-
-
-
-
-
 .flexColumn {
   display: flex;
   flex-direction: column;
@@ -92,7 +87,7 @@
   background: linear-gradient(90deg,
       var(--color-green-1) 10.58%, rgb(3, 170, 95) 30%, rgba(0, 78, 43, 0) 50%,
       rgba(22, 160, 98, 0) 90%),
-    url(../src/assets/images/COVER.png);
+    url(../src/assets/images/301903842_3307464646202282_3299358475494802390_n.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -375,14 +370,13 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #c4c4c4;
+  background: white;
   padding: 5px;
-  border-radius: 50%;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: var(--color-green-1);
 }
 
 /* Handle on hover */
@@ -553,13 +547,6 @@
   100% {
     border-radius: 30% 40% 30% 50%/60% 30% 70% 40%;
   }
-}
-
-@media (max-width: 460px) {
-  .majorContainer {
-    background-color: #000000;
-  }
-
 }
 
 .inputField {
@@ -1065,4 +1052,78 @@ ul {
   color: red;
   font-weight: bold;
   font-size: 10px;
+}
+
+.admisssionRight {
+  width: 74%;
+  position: relative;
+  padding: 30px 150px;
+}
+
+.admisssionLeft {
+  position: relative;
+  height: 1000px;
+  width: 35%;
+}
+
+.admisssion {
+  display: flex;
+  width: 100%;
+}
+
+.admisssionNavi {
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0px 3px 6px;
+  top: -20px;
+  left: 150px;
+  position: absolute;
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.admisssionNavi ul li {
+  padding: 15px 30px;
+}
+
+.admisssionNavi ul {
+  list-style: none;
+}
+
+.admisssionNavi ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.admisssionNavi ul li a:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admisssionNaviActive {
+  font-weight: 600;
+}
+
+.bridgingContainer {
+  margin: 30px 0;
+}
+
+.bridgingContainer h1 {
+  font-weight: bolder;
+  font-size: 36px;
+  margin: 30px 0;
+}
+.bridgingContainer p{
+ font-weight: 550;
+ color: var(--color-dark-1);
+ font-size: 16px;
+}
+
+.bridgingContainer .bridgeHead {
+  background-color: var(--color-green-1);
+  padding: 20px 0px 20px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }

@@ -31,7 +31,7 @@ function Registeration() {
         email: '*',
         isPermernant: '',
         current_address: '*',
-        permanent_address: '',
+        permanent_address: '*',
         emergency_phone_number: "*",
         emergency_address: '',
         emergency_name: '*',
@@ -72,7 +72,7 @@ function Registeration() {
         first_name: '',
         last_name: '',
         phone_number: "",
-        gender: '',
+        gender: 'm',
         date_of_birth: '',
         email: '',
         isPermernant: '',
@@ -275,9 +275,9 @@ function Registeration() {
                             <div className={styles.validationMessage}>{validationMessage.gender}</div>
                             <h5>Gender</h5>
                             <label htmlFor='gender'>Male</label>
-                            <input checked onChange={() => { handleChange('gender', 'm') }} name='gender' type='radio' value='male' />
+                            <input checked onChange={(e) => { handleChange('gender', e.target.value) }} name='gender' type='radio' value='m' />
                             <label htmlFor='gender'>Female</label>
-                            <input onChange={() => { handleChange('gender', 'f') }} name='gender' type='radio' value='female' />
+                            <input onChange={(e) => { handleChange('gender', e.target.value) }} name='gender' type='radio' value='f' />
                         </div>
                         <InputField
                             validate={validationMessage.date_of_birth}

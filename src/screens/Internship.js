@@ -5,12 +5,13 @@ import NewCover from '../components/NewCover';
 import Ruler from '../components/Ruler';
 import InternContainer from '../container/InternContainer';
 import interns from '../assets/data/Intern'
+import cover from '../assets/images/intercover.png'
 
 function PartnershipScreen() {
 
   return (
     <div>
-      <NewCover title="INTERSHIP PROGRAM"></NewCover>
+      <NewCover title="INTERSHIP PROGRAM" img={cover}></NewCover>
       
       <div className={styles.intershipContainer}>
         <p>During the last semester of the 4th Year, Students will be exposed to the working environment where they are expected to undertake various activities in the organizations that they are attached to. The Student Internship program (SIP) is an integral part of our curriculum. The 16-week immersion in a working environment will not only enhance the students' understanding of the application of the relevant IT discipline in an organization, but will also provide an opportunity for them to grow into responsible working adults.</p>
