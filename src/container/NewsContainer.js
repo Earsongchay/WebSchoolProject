@@ -11,7 +11,7 @@ import Ruler from '../components/Ruler'
 function NewsContainer() {
   return (
     
-    <div className={styles.allNews}>
+    <div id='news' className={styles.allNews}>
       <Ruler title='News & Events'></Ruler>
      <div className={styles.newsContainer}>
       <News desc="Student's Work: Interior Architecture and Graphic Design" title="EXHIBITION" Image={ex}></News>

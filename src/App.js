@@ -27,10 +27,10 @@ function App() {
     <BrowserRouter>
       <div>
         <div className='menu-container-secondary'>
-          <Link className="menu-item-sec" to='/'>News & Event</Link>
-          <Link className="menu-item-sec" to='/c'>Student Life</Link>
-          <Link className="menu-item-sec" to='/ons'>Alumni</Link>
-          <Link className="menu-item-sec" to='/'>E-learning</Link>
+          <Link className="menu-item-sec" to='/#news'>News & Event</Link>
+          <Link className="menu-item-sec" to='https://fb.watch/l-c9QbvpzY/'>Student Life</Link>
+          <Link className="menu-item-sec" to='/partner'>Alumni</Link>
+          <Link className="menu-item-sec" to='https://elearnings.setecu.com/login/index.php'>E-learning</Link>
         </div>
         <div className="menu-container-primary">
         <Link className='menu-item' to='/'><img src={logo} alt='logo' style={{width:'100%',height:'100%'}}></img></Link>

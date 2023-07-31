@@ -31,7 +31,7 @@ function AdmissionScreen() {
 
 
   return (
-    <div style={{ transition: '1.4s all' }}>
+    <div>
       <NewCover title='Admission Information' img={cover}></NewCover>
       <div className={styles.admisssion}>
         <div className={styles.admisssionLeft}>

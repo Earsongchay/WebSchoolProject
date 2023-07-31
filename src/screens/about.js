@@ -1,7 +1,6 @@
 import React from 'react'
 import MajorContainer from '../container/MajorContainer'
 import styles from '../Styles.module.css'
-import buttom from '../assets/images/Group 26.jpg'
 import Ruler from '../components/Ruler'
 
 function AboutScreen() {
